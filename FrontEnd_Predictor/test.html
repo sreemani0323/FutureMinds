@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAMCET College Predictor</title>
+    <link rel="stylesheet" href="test2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>EAMCET College Predictor</h1>
+        <form id="predictForm">
+            <label for="rank">EAMCET Rank:</label>
+            <input type="number" id="rank" name="rank" placeholder="Enter your rank" min="1" required>
+
+            <label for="branch">Desired Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select Branch</option>
+                <option value="CIV">Civil Engineering</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="ECE">Electronics & Communication Engineering</option>
+                <option value="EEE">Electrical & Electronics Engineering</option>
+                <option value="MEC">Mechanical Engineering</option>
+                <option value="INF">Information Technology</option>
+                <option value="AIM">Artificial Intelligence & Machine Learning</option>
+                <option value="AID">Artificial Intelligence & Data Science</option>
+                <option value="CAI">CSE (Artificial Intelligence)</option>
+                <option value="CSC">CSE (Cyber Security)</option>
+                <option value="CSD">CSE (Data Science)</option>
+                <option value="CSM">CSE (AI & ML Specialization)</option>
+                <option value="CHE">Chemical Engineering</option>
+                <option value="BIO">Biotechnology</option>
+                <option value="AGR">Agricultural Engineering</option>
+                <option value="MIN">Mining Engineering</option>
+                <option value="MET">Metallurgical Engineering</option>
+                <option value="ASE">Aerospace Engineering</option>
+                <option value="AUT">Automobile Engineering</option>
+                <option value="IOT">Internet of Things</option>
+                <option value="PHM">Pharmacy (B.Pharm – MPC Stream)</option>
+                <option value="PHD">Doctor of Pharmacy (Pharm.D)</option>
+                <option value="EIE">Electronics & Instrumentation Engineering</option>
+                <option value="CSB">CSE (Business Systems)</option>
+                <option value="GIN">Geo-Informatics Engineering</option>
+            </select>
+
+            <label for="category">Your Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="oc_boys">OC Boys</option>
+                <option value="oc_girls">OC Girls</option>
+                <option value="sc_boys">SC Boys</option>
+                <option value="sc_girls">SC Girls</option>
+                <option value="st_boys">ST Boys</option>
+                <option value="st_girls">ST Girls</option>
+                <option value="bca_boys">BCA Boys</option>
+                <option value="bca_girls">BCA Girls</option>
+                <option value="bcb_boys">BCB Boys</option>
+                <option value="bcb_girls">BCB Girls</option>
+                <option value="bcc_boys">BCC Boys</option>
+                <option value="bcc_girls">BCC Girls</option>
+                <option value="bcd_boys">BCD Boys</option>
+                <option value="bcd_girls">BCD Girls</option>
+                <option value="bce_boys">BCE Boys</option>
+                <option value="bce_girls">BCE Girls</option>
+                <option value="oc_ews_boys">OC EWS Boys</option>
+                <option value="oc_ews_girls">OC EWS Girls</option>
+            </select>
+
+            <button type="submit">Predict Colleges</button>
+        </form>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This prediction is based on previous years' cutoff data and trends. Actual cutoffs may vary year to year due to factors such as number of applicants, seat availability, and paper difficulty.</p>
+        </div>
+
+        <div id="results"></div>
+    </div>
+    
+    <footer>
+        <p>A Team FutureMinds Project</p>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="test3.js"></script>
+</body>
+</html>
